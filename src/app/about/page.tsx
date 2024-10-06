@@ -79,8 +79,8 @@ const structure = [
     ),
   },
   {
-    title: about.direction.title,
-    display: about.direction.display,
+    title: about.directions.title,
+    display: about.directions.display,
     items: [],
   },
 ];
@@ -551,6 +551,51 @@ export default function About() {
                           )}
                         </Flex>
                       )}
+                    </Flex>
+                  )
+                )}
+              </Flex>
+            </>
+          )}
+
+          {about.directions.display && (
+            <>
+              <Heading
+                as='h2'
+                id={about.directions.title}
+                variant='display-strong-s'
+                marginTop='40'
+                marginBottom='20'
+              >
+                {about.directions.title}
+              </Heading>
+              <Flex direction='column' fillWidth gap='l'>
+                {about.directions.items.map(
+                  (direction, index) => (
+                    <Flex
+                      key={`${direction}-${index}`}
+                      fillWidth
+                      gap='4'
+                      direction='column'
+                    >
+                      <Text
+                        variant='body-default-m'
+                        onBackground='neutral-weak'
+                      >
+                        {direction.description}
+                      </Text>
+                      <Flex direction='row' gap='8'>
+                        {direction.tags?.map((tag) => {
+                          return (
+                            <Tag
+                              key={tag}
+                              variant='neutral'
+                              size='m'
+                              label={tag}
+                            />
+                          );
+                        })}
+                      </Flex>
                     </Flex>
                   )
                 )}

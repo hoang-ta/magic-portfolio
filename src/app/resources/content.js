@@ -119,13 +119,6 @@ const about = {
         database. Additionally I also have a chance to work
         in geospatial field where I do visualization and
         interaction with geospatial data.
-        <br />
-        <br />
-        At the moment, I'm looking for a new opportunity
-        where I can bring my working programming experience
-        to cooperate with people and together learn and
-        build products that will leave a positive impact in
-        life.
       </>
     ),
   },
@@ -206,9 +199,9 @@ const about = {
               Finally, I work on a dashboard to manage files
               used by robots as well as other operations.
               The dashboard is part of a system called
-              ROBO-HI whose vision is a central place for
-              robot integration and robot management in the
-              future of Japan.
+              <strong>ROBO-HI</strong> whose vision is a
+              central place for robot integration and robot
+              management in the future of Japan.
             </p>
             <br />
             <p>
@@ -327,27 +320,40 @@ const about = {
       },
     ],
   },
-  direction: {
+  directions: {
     display: true, // set to false to hide this section
-    title: 'Direction',
+    title: `What I'm up to`,
     items: [
-      <>
-        In the beginning, I get myself familiar with basic
-        task of web development: fix minor UI bugs,
-        implement basic UI and server API by following
-        instructions from other senior members.
-      </>,
-      <>
-        Later on, I am assigned to a small team of three
-        people where we build an internal web app relying on
-        a high level WebGL library for data visualizaion and
-        interaction. The app is called{' '}
-        <strong>Fork Editor</strong> which handles path
-        generation for an automatic Forklift to operate. In
-        this project, I have a chance to collaborate and
-        contribute to building core UI and functionalities
-        from scratch.
-      </>,
+      {
+        description: (
+          <>
+            <p>
+              At the moment, I'm looking for a new
+              opportunity where I can bring my working
+              programming experience to cooperate with
+              people and together learn and build products
+              that will leave a positive impact in life.
+            </p>
+            <br />
+            <p>
+              Everything is relative so does role and level
+              expectation by each company, here is my
+              description of myself: A fullstack web
+              developer role with a level requirement
+              ranging from mid-senior to senior.
+            </p>
+          </>
+        ),
+        tags: [],
+      },
+      {
+        description: (
+          <>
+            <p></p>
+          </>
+        ),
+        tags: [],
+      },
     ],
   },
   technical: {
@@ -385,8 +391,8 @@ const about = {
           'HTML',
           'CSS',
           'React.js',
+          'Deck.GL',
           'Styled Components',
-          'Taildwind CSS',
           'Cypress',
         ],
       },
