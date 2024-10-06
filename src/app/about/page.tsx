@@ -174,7 +174,7 @@ export default function About() {
               </Flex>
 
               <a
-                href='/cv.pdf'
+                href='/Huy Hoang Ta - CV.pdf'
                 download={'Huy Hoang Ta - CV.pdf'}
               >
                 <Button
