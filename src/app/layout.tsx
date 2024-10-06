@@ -19,7 +19,11 @@ import { Source_Code_Pro } from 'next/font/google';
 
 import { Metadata } from 'next';
 
-import Theme from './theme';
+import dynamic from 'next/dynamic';
+
+const Theme = dynamic(() => import('./theme'), {
+  ssr: false,
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://' + baseURL),
