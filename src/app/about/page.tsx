@@ -162,7 +162,8 @@ export default function About() {
                 {person.location
                   .split('/')
                   .at(-1)
-                  ?.replaceAll('_', ' ')}
+                  ?.replaceAll('_', ' ')}{' '}
+                - {person.country} - {person.time}
               </Flex>
               <Flex gap='8' alignItems='center'>
                 <Icon

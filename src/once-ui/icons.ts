@@ -19,6 +19,7 @@ import {
   HiEnvelope,
   HiCalendarDays,
   HiSparkles,
+  HiLink,
 } from 'react-icons/hi2';
 
 import {
@@ -37,6 +38,7 @@ import {
   FaLinkedin,
   FaXTwitter,
   FaCopy,
+  FaHashnode,
 } from 'react-icons/fa6';
 
 export const iconLibrary: Record<string, IconType> = {
@@ -68,6 +70,8 @@ export const iconLibrary: Record<string, IconType> = {
   github: FaGithub,
   linkedin: FaLinkedin,
   x: FaXTwitter,
+  hashnode: FaHashnode,
   copy: FaCopy,
   sparkle: HiSparkles,
+  web: HiLink,
 };

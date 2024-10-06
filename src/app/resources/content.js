@@ -10,10 +10,12 @@ const person = {
   role: 'Web Developer',
   avatar: '/images/avatar.jpg',
   location: 'Asia/Ho_Chi_Minh', // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  country: 'Vietnam', // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  country: 'Vietnam',
+  time: 'GTM+7',
   languages: ['English'], // optional: Leave the array empty if you don't want to display languages
   yearOfExperience: 4,
   email: 'huyhoang.ta97@gmail.com',
+  web: 'https://huyhoangta.com/',
 };
 
 const newsletter = {
@@ -46,6 +48,11 @@ const social = [
     link: 'https://github.com/hoang-ta/',
   },
   {
+    name: 'Hashnode',
+    icon: 'hashnode',
+    link: 'https://huy-hoang-ta.hashnode.dev/',
+  },
+  {
     name: 'X',
     icon: 'x',
     link: 'https://x.com/huyhoang_ta',
@@ -70,7 +77,7 @@ const home = {
       and presentation. The topics will vary from mostly
       programming to thoughts formed through reading books,
       blog posts, and related stuff on simplicity and
-      efficiency in working, design engineer.
+      efficiency in working, design.
       <br />
       <br />
       You can also find me from other places on the internet
@@ -290,7 +297,7 @@ const about = {
               new: true,
             },
             {
-              name: 'Cypress, Jest',
+              name: 'Cypress',
               new: true,
             },
           ],
@@ -349,7 +356,19 @@ const about = {
       {
         description: (
           <>
-            <p></p>
+            <p>
+              Besides familiar skills, ideas, I often find
+              it fascinating to hear from other renown
+              people talk about programming, working
+              methodology so that I can expand my world
+              view. At the moment, I'm exploring{' '}
+              <strong>Ruby on Rails</strong> and will later
+              move on to their related tools due to the
+              impression on their motivations to strive for
+              simplicity but still ensure efficient result
+              in the way we work and achiveve results with
+              technology.
+            </p>
           </>
         ),
         tags: [],
@@ -451,7 +470,7 @@ const about = {
 
 const blog = {
   label: 'Blog',
-  title: 'Writing about design and tech...',
+  title: 'Writing about thoughts, programming, design, ...',
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
