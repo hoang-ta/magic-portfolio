@@ -172,6 +172,26 @@ export default function About() {
                 />
                 {person.email}
               </Flex>
+              <Flex gap='8' alignItems='center'>
+                <Icon
+                  onBackground='accent-weak'
+                  name='web'
+                />
+                <a href={person.web}>My site</a>
+              </Flex>
+              <a
+                href='/cv.pdf'
+                download={'Huy Hoang Ta - CV.pdf'}
+              >
+                <Button
+                  data-border='rounded'
+                  variant='secondary'
+                  suffixIcon='download'
+                  size='l'
+                >
+                  Download My CV
+                </Button>
+              </a>
             </Flex>
 
             {/* {person.languages.length > 0 && (
