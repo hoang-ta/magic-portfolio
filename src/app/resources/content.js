@@ -135,6 +135,30 @@ const about = {
     experiences: [
       {
         company: 'ZMP Vietnam',
+        aboutCompany: (
+          <>
+            <p>
+              During my time working here, the company
+              focuses on making software that helps the
+              management and operations of robots that are
+              manufactured in Japan.
+            </p>
+            <br />
+            <p>Some noticeable operation are:</p>
+            <ul>
+              <li>
+                Create web application that supports the
+                operations of robots such as creating maps
+                used by robots for navigation
+              </li>
+              <li>
+                Create a dashboard web app that handle
+                management of robots bewteen different
+                companies
+              </li>
+            </ul>
+          </>
+        ),
         timeframe: '2020/06 - 2024/07',
         role: 'Software Engineer',
         achievements: [
@@ -146,48 +170,136 @@ const about = {
             members.
           </>,
           <>
-            Later on, I am assigned to a small team of three
-            people where we build an internal web app
-            relying on a high level WebGL library for data
-            visualizaion and interaction. The app is called{' '}
-            <strong>Fork Editor</strong> which handles path
-            generation for an automatic Forklift to operate.
-            In this project, I have a chance to collaborate
-            and contribute to building core UI and
-            functionalities from scratch.
+            <p>
+              Later on, I am assigned to a small team of
+              three people where we build an internal web
+              app relying on a high level WebGL library for
+              data visualizaion and interaction.
+            </p>
+            <br />
+            <p>
+              The app is called <strong>Fork Editor</strong>{' '}
+              which handles path generation for an automatic
+              Forklift to operate. In this project, I have a
+              chance to collaborate and contribute to
+              building core UI and functionalities from
+              scratch.
+            </p>
           </>,
           <>
-            After that, we continue with tasks converting an
-            internal tool built with C++ for Linux into a
-            web app based on the motivation of the Fork
-            Editor. With this one, we used nearly the same
-            tech stack as Fork with the addition of gRPC to
-            handle the communication between API of the
-            original app and the new web app.
+            <p>
+              After that, we continue with tasks converting
+              an internal tool built with C++ for Linux into
+              a web app based on the motivation of the Fork
+              Editor.
+            </p>
+            <br />
+            <p>
+              With this one, we used nearly the same tech
+              stack as Fork with the addition of gRPC to
+              handle the communication between API of the
+              original app and the new web app.
+            </p>
           </>,
           <>
-            Moving on, I work on the dashboard page to
-            manage files which is part of a system called
-            ROBO-HI whose vision is a central place robot
-            integration and robot management in the future
+            <p>
+              Finally, I work on a dashboard to manage files
+              used by robots as well as other operations.
+              The dashboard is part of a system called
+              ROBO-HI whose vision is a central place for
+              robot integration and robot management in the
+              future of Japan.
+            </p>
+            <br />
+            <p>
+              During this phase, I have more chance working
+              at the backend with API and database beside
+              the frontend. In this project, we also include
+              automation test to reduce bugs for the system.
+            </p>
           </>,
         ],
         tags: [
-          ['React.js', 'Node.js', 'TypeScript'],
           [
-            'React.js',
-            'Node.js',
-            'TypeScript',
-            'Deck.GL',
-            'MUI',
+            {
+              name: 'React.js',
+              new: true,
+            },
+            {
+              name: 'Node.js',
+              new: true,
+            },
+            {
+              name: 'TypeScript',
+              new: true,
+            },
           ],
           [
-            'React.js',
-            'Node.js',
-            'TypeScript',
-            'Deck.GL',
-            'Ant Design',
-            'gRPC',
+            {
+              name: 'React.js',
+            },
+            {
+              name: 'Node.js',
+            },
+            {
+              name: 'TypeScript',
+            },
+            {
+              name: 'Deck.GL',
+              new: true,
+            },
+          ],
+          [
+            {
+              name: 'React.js',
+              new: false,
+            },
+            {
+              name: 'Node.js',
+              new: false,
+            },
+            {
+              name: 'TypeScript',
+              new: false,
+            },
+            {
+              name: 'Deck.GL',
+              new: false,
+            },
+            {
+              name: 'Mongoose',
+              new: true,
+            },
+            {
+              name: 'gRPC',
+              new: true,
+            },
+          ],
+          [
+            {
+              name: 'React.js',
+              new: false,
+            },
+            {
+              name: 'Node.js',
+              new: false,
+            },
+            {
+              name: 'TypeScript',
+              new: false,
+            },
+            {
+              name: 'Sequelize',
+              new: true,
+            },
+            {
+              name: 'AWS: S3, Dynamo',
+              new: true,
+            },
+            {
+              name: 'Cypress, Jest',
+              new: true,
+            },
           ],
         ],
         images: [
@@ -215,48 +327,116 @@ const about = {
       },
     ],
   },
+  direction: {
+    display: true, // set to false to hide this section
+    title: 'Direction',
+    items: [
+      <>
+        In the beginning, I get myself familiar with basic
+        task of web development: fix minor UI bugs,
+        implement basic UI and server API by following
+        instructions from other senior members.
+      </>,
+      <>
+        Later on, I am assigned to a small team of three
+        people where we build an internal web app relying on
+        a high level WebGL library for data visualizaion and
+        interaction. The app is called{' '}
+        <strong>Fork Editor</strong> which handles path
+        generation for an automatic Forklift to operate. In
+        this project, I have a chance to collaborate and
+        contribute to building core UI and functionalities
+        from scratch.
+      </>,
+    ],
+  },
   technical: {
     display: true, // set to false to hide this section
-    title: 'Technical skills',
+    title: 'Skills',
+    description:
+      'Here, I summarize a list of skills and tools by categories that I often use in my job and my daily practice.',
     skills: [
       {
-        title: 'Figma',
+        title: 'Frontend',
         description: (
           <>
-            Able to prototype in Figma with Once UI with
-            unnatural speed.
+            Implement user interface based on Figma design
+            using React.js with its library ecosystem.
+            Besides traditional UI, I also have experience
+            in data visualization and data interaction for
+            geospatial field.
           </>
         ),
         images: [
-          {
-            src: '/images/projects/project-01/cover-02.jpg',
-            alt: 'Project image',
-            width: 16,
-            height: 9,
-          },
-          {
-            src: '/images/projects/project-01/cover-03.jpg',
-            alt: 'Project image',
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: '/images/projects/project-01/cover-02.jpg',
+          //   alt: 'Project image',
+          //   width: 16,
+          //   height: 9,
+          // },
+          // {
+          //   src: '/images/projects/project-01/cover-03.jpg',
+          //   alt: 'Project image',
+          //   width: 16,
+          //   height: 9,
+          // },
+        ],
+        tags: [
+          'HTML',
+          'CSS',
+          'React.js',
+          'Styled Components',
+          'Taildwind CSS',
+          'Cypress',
         ],
       },
       {
-        title: 'Next.js',
+        title: 'Backend',
         description: (
           <>
-            Building next gen apps with Next.js + Once UI +
-            Supabase.
+            Implement APIs for communication between client
+            and server. Additionally, I have worked with
+            database modelling and database interaction
+            using an ORM tool like Sequelize or ODM such as
+            Mongoose.
           </>
         ),
         images: [
-          {
-            src: '/images/projects/project-01/cover-04.jpg',
-            alt: 'Project image',
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: '/images/projects/project-01/cover-04.jpg',
+          //   alt: 'Project image',
+          //   width: 16,
+          //   height: 9,
+          // },
+        ],
+        tags: [
+          'Node.js',
+          'Mongoose',
+          'Sequelize',
+          'AWS',
+          'Jest',
+        ],
+      },
+      {
+        title: 'Tools and Processes',
+        description: (
+          <>
+            Beside main technology stack I use above to help
+            build products along my working and learning
+            journey, I also have chance to use other tools
+            and processes that definitely assist me a lot.
+          </>
+        ),
+        images: [],
+        tags: [
+          'Figma',
+          'Git',
+          'Docker',
+          'MongoDB Atlas',
+          'pgAdmin',
+          'Jira',
+          'Scrum',
+          'Swagger',
         ],
       },
     ],
@@ -283,7 +463,6 @@ const gallery = {
   label: 'Gallery',
   title: 'My photo gallery',
   description: `A photo collection by ${person.name}`,
-  // Images from https://pexels.com
   images: [
     {
       src: '/images/gallery/img-01.jpg',
@@ -292,66 +471,6 @@ const gallery = {
     },
     {
       src: '/images/gallery/img-02.jpg',
-      alt: 'image',
-      orientation: 'horizontal',
-    },
-    {
-      src: '/images/gallery/img-03.jpg',
-      alt: 'image',
-      orientation: 'vertical',
-    },
-    {
-      src: '/images/gallery/img-04.jpg',
-      alt: 'image',
-      orientation: 'horizontal',
-    },
-    {
-      src: '/images/gallery/img-05.jpg',
-      alt: 'image',
-      orientation: 'horizontal',
-    },
-    {
-      src: '/images/gallery/img-06.jpg',
-      alt: 'image',
-      orientation: 'vertical',
-    },
-    {
-      src: '/images/gallery/img-07.jpg',
-      alt: 'image',
-      orientation: 'horizontal',
-    },
-    {
-      src: '/images/gallery/img-08.jpg',
-      alt: 'image',
-      orientation: 'vertical',
-    },
-    {
-      src: '/images/gallery/img-09.jpg',
-      alt: 'image',
-      orientation: 'horizontal',
-    },
-    {
-      src: '/images/gallery/img-10.jpg',
-      alt: 'image',
-      orientation: 'horizontal',
-    },
-    {
-      src: '/images/gallery/img-11.jpg',
-      alt: 'image',
-      orientation: 'vertical',
-    },
-    {
-      src: '/images/gallery/img-12.jpg',
-      alt: 'image',
-      orientation: 'horizontal',
-    },
-    {
-      src: '/images/gallery/img-13.jpg',
-      alt: 'image',
-      orientation: 'horizontal',
-    },
-    {
-      src: '/images/gallery/img-14.jpg',
       alt: 'image',
       orientation: 'horizontal',
     },

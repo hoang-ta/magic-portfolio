@@ -7,6 +7,7 @@ import {
   IconButton,
   SmartImage,
   Tag,
+  TagInput,
   Text,
 } from '@/once-ui/components';
 import {
@@ -17,7 +18,7 @@ import {
 } from '@/app/resources';
 import TableOfContents from '@/app/about/components/TableOfContents';
 import styles from '@/app/about/about.module.scss';
-import Dialog from './components/Dialog';
+import AboutCompanyDialog from './components/Dialog';
 
 export function generateMetadata() {
   const title = about.title;
@@ -77,6 +78,11 @@ const structure = [
       (skill) => skill.title
     ),
   },
+  {
+    title: about.direction.title,
+    display: about.direction.display,
+    items: [],
+  },
 ];
 
 export default function About() {
@@ -108,7 +114,6 @@ export default function About() {
           }),
         }}
       />
-      <Dialog />
       {about.tableOfContent.display && (
         <Flex
           style={{
@@ -313,13 +318,9 @@ export default function About() {
                           >
                             {experience.company}
                           </Text>
-                          <IconButton
-                            name='helpCircle'
-                            size='s'
-                            tooltip='about'
-                            tooltipPosition='top'
-                            variant='primary'
-                          />
+                          <AboutCompanyDialog>
+                            {experience.aboutCompany}
+                          </AboutCompanyDialog>
                         </Flex>
                         <Text
                           variant='heading-default-xs'
@@ -353,13 +354,18 @@ export default function About() {
                               <Flex direction='row' gap='4'>
                                 {experience.tags[
                                   index
-                                ]?.map((tag) => {
+                                ]?.map((tag, tagIndex) => {
                                   return (
                                     <Tag
-                                      key={tag}
+                                      key={`${tag.name}-${index}-${tagIndex}`}
                                       variant='neutral'
                                       size='m'
-                                      label={tag}
+                                      label={tag.name}
+                                      suffixIcon={
+                                        tag.new
+                                          ? 'sparkle'
+                                          : ''
+                                      }
                                     />
                                   );
                                 })}
@@ -472,10 +478,17 @@ export default function About() {
                 as='h2'
                 id={about.technical.title}
                 variant='display-strong-s'
-                marginBottom='40'
+                marginBottom='20'
               >
                 {about.technical.title}
               </Heading>
+              <Text
+                variant='body-default-m'
+                onBackground='neutral-weak'
+                marginBottom='20'
+              >
+                {about.technical.description}
+              </Text>
               <Flex direction='column' fillWidth gap='l'>
                 {about.technical.skills.map(
                   (skill, index) => (
@@ -485,7 +498,10 @@ export default function About() {
                       gap='4'
                       direction='column'
                     >
-                      <Text variant='heading-strong-l'>
+                      <Text
+                        variant='heading-strong-l'
+                        id={skill.title}
+                      >
                         {skill.title}
                       </Text>
                       <Text
@@ -494,6 +510,18 @@ export default function About() {
                       >
                         {skill.description}
                       </Text>
+                      <Flex direction='row' gap='8'>
+                        {skill.tags?.map((tag) => {
+                          return (
+                            <Tag
+                              key={tag}
+                              variant='brand'
+                              size='m'
+                              label={tag}
+                            />
+                          );
+                        })}
+                      </Flex>
                       {skill.images.length > 0 && (
                         <Flex
                           fillWidth

@@ -1,18 +1,30 @@
 'use client';
 
-import { Dialog as BaseDialog } from '@/once-ui/components';
+import {
+  Dialog as BaseDialog,
+  IconButton,
+} from '@/once-ui/components';
 import { useState } from 'react';
 
-export default function Dialog() {
-  const [open, setOpen] = useState(true);
+export default function AboutCompanyDialog({ children }) {
+  const [open, setOpen] = useState(false);
 
   return (
-    <BaseDialog
-      isOpen={open}
-      title='Dialog Title'
-      onClose={() => setOpen(!open)}
-    >
-      <p>This is the content of the dialog.</p>
-    </BaseDialog>
+    <>
+      <IconButton
+        data-border='rounded'
+        variant='ghost'
+        icon='helpCircle'
+        tooltip='about'
+        onClick={() => setOpen(true)}
+      />
+      <BaseDialog
+        isOpen={open}
+        title='About Company'
+        onClose={() => setOpen(!open)}
+      >
+        {children}
+      </BaseDialog>
+    </>
   );
 }
