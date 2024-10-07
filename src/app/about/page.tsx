@@ -143,7 +143,7 @@ export default function About() {
           <Flex
             minWidth='160'
             paddingX='l'
-            paddingBottom='xl'
+            // paddingBottom='xl'
             gap='m'
             flex={3}
             direction='column'
@@ -218,7 +218,7 @@ export default function About() {
             minHeight='160'
             direction='column'
             justifyContent='center'
-            marginBottom='32'
+            marginBottom='16'
           >
             {about.calendar.display && (
               <Flex
@@ -297,7 +297,7 @@ export default function About() {
               textVariant='body-default-l'
               fillWidth
               gap='m'
-              marginBottom='xl'
+              marginBottom='20'
             >
               {about.intro.description}
             </Flex>
@@ -520,7 +520,7 @@ export default function About() {
                     <Flex
                       key={`${skill}-${index}`}
                       fillWidth
-                      gap='4'
+                      gap='16'
                       direction='column'
                     >
                       <Text

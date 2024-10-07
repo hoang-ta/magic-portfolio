@@ -90,6 +90,18 @@ const home = {
       universe. Otherwise why else even be here?"
       <br />
       <br />
+      <p>
+        Besides familiar skills, ideas, I often find it
+        fascinating to hear from other renown people talk
+        about programming, working methodology so that I can
+        expand my world view. At the moment, I'm exploring{' '}
+        <strong>Ruby on Rails, TailwindCSS</strong> and will
+        later move on to their related tools due to the
+        impression on the creators' motivations to strive
+        for simplicity but still ensure efficient result in
+        the way we work and achiveve results with
+        technology.
+      </p>
     </>
   ),
 };
@@ -117,15 +129,18 @@ const about = {
         I'm {person.firstName} from Vietnam, I look at
         myself as a programmer with a passion for solving
         complex challenges with simple, and efficient
-        solutions.
+        solutions. I am inspired to learn new things and
+        practice to become excellent at the things I do as
+        well as embracing new challenges.
         <br />
-        <br />I am a former fullstack web developer with{' '}
-        {person.yearOfExperience}+ years of experience in
-        web development space where I build user interface
-        (UI) from Figma design, to implement server API and
-        database. Additionally I also have a chance to work
-        in geospatial field where I do visualization and
-        interaction with geospatial data.
+        <br />I have been working as a fullstack web
+        developer for {person.yearOfExperience}+ years.
+        During this phase, I work with other developers,
+        designers, and sometimes with stakeholders to build
+        user interface (UI) from Figma design, implement
+        server API and database. Additionally I also have a
+        chance to work in geospatial field where I do
+        visualization and interaction with geospatial data.
       </>
     ),
   },
@@ -171,10 +186,13 @@ const about = {
           </>,
           <>
             <p>
-              Later on, I am assigned to a small team of
-              three people where we build an internal web
-              app relying on a high level WebGL library for
-              data visualizaion and interaction.
+              Later on, I work with a small team of three
+              people where we build an internal web app
+              relying on a high level WebGL library for data
+              visualizaion and interaction. From this
+              project, I start participating in code review
+              more to improve my skills and learn from other
+              members.
             </p>
             <br />
             <p>
@@ -188,16 +206,18 @@ const about = {
           </>,
           <>
             <p>
-              After that, we continue with tasks converting
-              an internal tool built with C++ for Linux into
-              a web app based on the motivation of the Fork
-              Editor.
+              After that, we continue with another project
+              converting an internal tool built with C++ for
+              Linux into a web app based on the motivation
+              of the Fork Editor. With previous experience,
+              I also have an hornor to mentor new members on
+              this project.
             </p>
             <br />
             <p>
               With this one, we used nearly the same tech
-              stack as Fork with the addition of gRPC to
-              handle the communication between API of the
+              stack as above with the addition of gRPC to
+              handle the communication between APIs of the
               original app and the new web app.
             </p>
           </>,
@@ -205,7 +225,7 @@ const about = {
             <p>
               Finally, I work on a dashboard to manage files
               used by robots as well as other operations.
-              The dashboard is part of a system called
+              The dashboard is part of a system called{' '}
               <strong>ROBO-HI</strong> whose vision is a
               central place for robot integration and robot
               management in the future of Japan.
@@ -343,25 +363,12 @@ const about = {
             </p>
             <br />
             <p>
-              Everything is relative so does role and level
-              expectation by each company, here is my
-              description of myself: A fullstack web
-              developer role with a level requirement
-              ranging from mid-senior to senior.
-            </p>
-            <br />
-            <p>
-              Besides familiar skills, ideas, I often find
-              it fascinating to hear from other renown
-              people talk about programming, working
-              methodology so that I can expand my world
-              view. At the moment, I'm exploring{' '}
-              <strong>Ruby on Rails</strong> and will later
-              move on to their related tools due to the
-              impression on their motivations to strive for
-              simplicity but still ensure efficient result
-              in the way we work and achiveve results with
-              technology.
+              The work that fits me most will be a fullstack
+              web developer role with a level requirement
+              ranging from mid-senior to senior. At my
+              previous job, I have experienced with
+              mentoring new members with a small team from
+              1-2 members.
             </p>
           </>
         ),
@@ -411,10 +418,10 @@ const about = {
         tags: [
           'HTML',
           'CSS',
+          'JavaScript, TypeScript',
           'React.js',
-          'Deck.GL',
           'Styled Components',
-          'Cypress',
+          'Deck.GL',
         ],
       },
       {
@@ -422,10 +429,8 @@ const about = {
         description: (
           <>
             Implement APIs for communication between client
-            and server. Additionally, I have worked with
-            database modelling and database interaction
-            using an ORM tool like Sequelize or ODM such as
-            Mongoose.
+            and server, database modelling, and database
+            interaction.
           </>
         ),
         images: [
@@ -438,20 +443,31 @@ const about = {
         ],
         tags: [
           'Node.js',
-          'Mongoose',
-          'Sequelize',
-          'AWS',
-          'Jest',
+          'MongoDB with Mongoose',
+          'Postgres with Sequelize',
         ],
+      },
+      {
+        title: 'Testing',
+        description: (
+          <>
+            One important part of software development is
+            testing in which I have experience with working
+            with automation test for frontend and unit test
+            for backend.
+          </>
+        ),
+        images: [],
+        tags: ['Cypress', 'Jest'],
       },
       {
         title: 'Tools and Processes',
         description: (
           <>
-            Beside main technology stack I use above to help
-            build products along my working and learning
-            journey, I also have chance to use other tools
-            and processes that definitely assist me a lot.
+            Beside main technology stack I use above along
+            my working and learning journey, I also have
+            chance to use other tools and processes that
+            definitely assist me a lot.
           </>
         ),
         images: [],
@@ -459,11 +475,11 @@ const about = {
           'Figma',
           'Git',
           'Docker',
-          'MongoDB Atlas',
-          'pgAdmin',
+          'AWS',
           'Jira',
           'Scrum',
           'Swagger',
+          'BDD',
         ],
       },
     ],
