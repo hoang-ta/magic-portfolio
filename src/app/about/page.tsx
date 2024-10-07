@@ -2,6 +2,7 @@ import {
   Avatar,
   Button,
   Flex,
+  Grid,
   Heading,
   Icon,
   IconButton,
@@ -125,7 +126,7 @@ export default function About() {
           paddingLeft='24'
           gap='32'
           direction='column'
-          hide='s'
+          hide='m'
         >
           <TableOfContents
             structure={structure}
@@ -172,7 +173,11 @@ export default function About() {
                 />
                 {person.email}
               </Flex>
-
+              <Flex
+                as={'div'}
+                fillWidth
+                justifyContent='center'
+              >
               <a
                 href='/Huy Hoang Ta - CV.pdf'
                 download={'Huy Hoang Ta - CV.pdf'}
@@ -186,6 +191,7 @@ export default function About() {
                   Download My CV
                 </Button>
               </a>
+              </Flex>
             </Flex>
 
             {/* {person.languages.length > 0 && (
@@ -366,7 +372,11 @@ export default function About() {
                               >
                                 {achievement}
                               </Text>
-                              <Flex direction='row' gap='4'>
+                              <Grid
+                                columns='repeat(4, 1fr)'
+                                gap='12'
+                                mobileColumns='2col'
+                              >
                                 {experience.tags[
                                   index
                                 ]?.map((tag, tagIndex) => {
@@ -384,7 +394,7 @@ export default function About() {
                                     />
                                   );
                                 })}
-                              </Flex>
+                              </Grid>
                             </>
                           )
                         )}
@@ -525,7 +535,11 @@ export default function About() {
                       >
                         {skill.description}
                       </Text>
-                      <Flex direction='row' gap='8'>
+                      <Grid
+                        columns='repeat(4, 1fr)'
+                        gap='12'
+                        mobileColumns='2col'
+                      >
                         {skill.tags?.map((tag) => {
                           return (
                             <Tag
@@ -536,7 +550,7 @@ export default function About() {
                             />
                           );
                         })}
-                      </Flex>
+                      </Grid>
                       {skill.images.length > 0 && (
                         <Flex
                           fillWidth

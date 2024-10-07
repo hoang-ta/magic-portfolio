@@ -83,6 +83,8 @@ export default function RootLayout({
   children,
 }: RootLayoutProps) {
   return (
+    <html lang='en'>
+      <body>
     <Theme>
       <Flex
         style={{ minHeight: '100vh' }}
@@ -118,5 +120,7 @@ export default function RootLayout({
         <Footer />
       </Flex>
     </Theme>
+      </body>
+    </html>
   );
 }

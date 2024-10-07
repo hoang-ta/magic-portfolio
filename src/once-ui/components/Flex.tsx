@@ -136,7 +136,7 @@ const Flex = forwardRef<HTMLDivElement, ComponentProps>(({
         direction === 'row' && 'flex-row',
         tabletDirection === 'column' && 'm-flex-column',
         tabletDirection === 'row' && 'm-flex-row',
-        mobileDirection === 'column' && 's-flex-column',
+        mobileDirection === 'column' && 'm-flex-column',
         mobileDirection === 'row' && 's-flex-row',
         borderStyle && `border-${borderStyle}`,
         radius === 'full' ? 'radius-full' : radius && `radius-${radius}`,

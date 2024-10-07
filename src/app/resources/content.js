@@ -349,13 +349,7 @@ const about = {
               developer role with a level requirement
               ranging from mid-senior to senior.
             </p>
-          </>
-        ),
-        tags: [],
-      },
-      {
-        description: (
-          <>
+            <br />
             <p>
               Besides familiar skills, ideas, I often find
               it fascinating to hear from other renown
@@ -373,6 +367,14 @@ const about = {
         ),
         tags: [],
       },
+      // {
+      //   description: (
+      //     <>
+
+      //     </>
+      //   ),
+      //   tags: [],
+      // },
     ],
   },
   technical: {
