@@ -189,7 +189,7 @@ const about = {
               Later on, I work with a small team of three
               people where we build an internal web app
               relying on a high level WebGL library for data
-              visualizaion and interaction. From this
+              visualization and interaction. From this
               project, I start participating in code review
               more to improve my skills and learn from other
               members.

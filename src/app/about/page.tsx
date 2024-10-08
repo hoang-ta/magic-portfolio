@@ -179,8 +179,8 @@ export default function About() {
                 justifyContent='center'
               >
               <a
-                href='/Huy Hoang Ta - CV.pdf'
-                download={'Huy Hoang Ta - CV.pdf'}
+                  href='/Huy Hoang Ta - resume.pdf'
+                  download={'Huy Hoang Ta - resume.pdf'}
               >
                 <Button
                   data-border='rounded'
